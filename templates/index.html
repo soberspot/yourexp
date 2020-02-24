@@ -17,7 +17,7 @@
 
 {% comment %} django code {% endcomment %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+<link rel="stylesheet" href="{% static 'svg/' %}">
 {% comment %} django code {% endcomment %}
 
 </head>
@@ -27,8 +27,8 @@
 
 <body>
 <!-- partial:index.partial.html -->
-<h1>Юнжно региональная экспертная группа</h1>
-<p>Handy for equal height columns w/out JS. Should play nicely with other frameworks. You can set <code>$customGutters</code> &amp; <code>$customWidths</code> to <code>false</code> to reduce CSS if you want to use defaults. Override naming scheme in Sass variables to your liking.</p>
+<h1>ООО  Южно региональная экспертная группа</h1>
+<p>Инновационная компания Юга Росси, </p>
 
 {% comment %}  {% endcomment %}
 <h2 class="type">custom width override</h2>
@@ -180,13 +180,13 @@
         <div class="l-footer__content">
           <article class="l-footer__about">
             <header class="l-footer__logo">
-              <a href="index.html">
+              {% comment %} <a href="index.html">
                 <img class="nav__logo"
-                     src="static/assets/svg/ds-logo-white.825099c5417e.svg"
-                     alt="ООО Южно региональная экспертная группа">
-              </a>
+                     src="logo.svg"
+                     alt="ООО ЮРЭКСП">
+              </a> {% endcomment %}
             </header>
-
+{% comment %}
             <div class="l-footer__supporting-text">
               <div class="rich-text"><p>Инновационная компания ООО "Южно региональная экспертная группа"</p></div>
             </div>
@@ -310,10 +310,10 @@
           </section>
 
         </div>
-      </div>
+      </div> {% endcomment %}
 
 
-      <ul class="l-footer__list l-footer__social row">
+      {% comment %} <ul class="l-footer__list l-footer__social row">
 
           <li class="l-footer__list-item">
               <a href="https://clutch.co/profile/django-stars"
@@ -371,7 +371,7 @@
                  target="_blank"></a>
           </li>
 
-      </ul>
+      </ul> {% endcomment %}
 
       <p class="l-footer__copy">© 2020 ООО "Южно региональная экспертная группа"
 	  </p>
