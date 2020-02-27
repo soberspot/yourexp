@@ -17,7 +17,7 @@
 
 {% comment %} django code {% endcomment %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+<link rel="stylesheet" href="{% static 'svg/' %}">
 {% comment %} django code {% endcomment %}
 
 </head>
@@ -27,12 +27,46 @@
 
 <body>
 <!-- partial:index.partial.html -->
-<h1>CSS Table Grid</h1>
-<p>Handy for equal height columns w/out JS. Should play nicely with other frameworks. You can set <code>$customGutters</code> &amp; <code>$customWidths</code> to <code>false</code> to reduce CSS if you want to use defaults. Override naming scheme in Sass variables to your liking.</p>
+<h1>ООО  "Южно региональная экспертная группа</h1>
+<h3>Российская инжиниринговая компания</h3>
+<p>г. Краснодар, +7 (918)-451-66-11</p>
+
+
+<!-- 2 col -->
+<h2 class="type">Основные направления </h2>
+
+<div class="table-grid">
+	<div class="table-grid--container">
+		<div class="table-grid--row">
+
+				<div class="tg-col-6">
+					<h2>Судебная автотехническая экспертиза</h2>
+
+
+					<div class="tg-col image" data-width="12">
+				{% comment %} <img src="https://unsplash.it/900/400?image=163" alt="Table"> {% endcomment %}
+				<img src="{% static 'images/1.jpg' %}" alt="Table"></div>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat numquam corrupti rerum tenetur tempora maxime culpa neque, iusto fuga deleniti delectus veniam commodi itaque deserunt iste aut sapiente. Nemo, nulla?</p>
+				</div>
+
+				<div class="tg-col-6">
+					<h2>Независимая техническая экспертиза транспортных средств</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat numquam corrupti rerum tenetur tempora maxime culpa neque, iusto fuga deleniti delectus veniam commodi itaque deserunt iste aut sapiente. Nemo, nulla?</p>
+
+					<div class="tg-col image" data-width="12">
+				{% comment %} <img src="https://unsplash.it/900/400?image=163" alt="Table"> {% endcomment %}
+				<img src="{% static 'images/1.jpg' %}" alt="Table"></div>
+				</div><!--// right -->
+
+		</div><!--// .table-grid--row -->
+	</div><!--// .table-grid--container -->
+</div><!--// .table-grid -->
 
 {% comment %}  {% endcomment %}
 <h2 class="type">custom width override</h2>
-<p>Add <code>data-width="62"</code> to <code>.tg-col</code> to get a custom percentage based width. The other column is set to auto if undefined.</p>
+<p>Add  to get a custom percentage based width. The other column is set to auto if undefined.</p>
 <div class="table-grid">
 	<div class="table-grid--container">
 		<div class="table-grid--row">
@@ -51,30 +85,13 @@
 
 
 
-<!-- 2 col -->
-<h2 class="type">2 Col Две колонки</h2>
 
-<div class="table-grid">
-	<div class="table-grid--container">
-		<div class="table-grid--row">
-
-				<div class="tg-col-6">
-					<h2>Первая колонка</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat numquam corrupti rerum tenetur tempora maxime culpa neque, iusto fuga deleniti delectus veniam commodi itaque deserunt iste aut sapiente. Nemo, nulla?</p>
-				</div>
-
-				<div class="tg-col-6">
-					<h2>Heading Here</h2>
-				</div><!--// right -->
-
-		</div><!--// .table-grid--row -->
-	</div><!--// .table-grid--container -->
-</div><!--// .table-grid -->
 
 
 <!-- 3 col -->
 <h2 class="type">3 Col</h2>
-<p>Add <code>data-gutter="40"</code>  on <code>.table-grid</code> for custom pixel-based gutters.</p>
+<p>Add  for custom pixel-based gutters.</p>
+
 <div class="table-grid" data-gutter="40"><!-- parent - overflow -->
 	<div class="table-grid--container"><!-- neg margins -->
 		<div class="table-grid--row">
@@ -162,9 +179,27 @@
 <div class="table-grid">
 	<div class="table-grid--container">
 		<div class="table-grid--row">
-			<div class="tg-col-4"></div>
-			<div class="tg-col-4"></div>
-			<div class="tg-col-4"></div>
+
+			<div class="tg-col-4">
+
+					<div class="tg-col image" data-width="12">
+				{% comment %} <img src="https://unsplash.it/900/400?image=163" alt="Table"> {% endcomment %}
+				<img src="{% static 'images/1.jpg' %}" alt="Table"></div>
+
+			</div>
+			<div class="tg-col-4">
+
+					<div class="tg-col image" data-width="12">
+				{% comment %} <img src="https://unsplash.it/900/400?image=163" alt="Table"> {% endcomment %}
+				<img src="{% static 'images/1.jpg' %}" alt="Table"></div>
+			</div>
+			<div class="tg-col-4">
+
+
+					<div class="tg-col image" data-width="12">
+				{% comment %} <img src="https://unsplash.it/900/400?image=163" alt="Table"> {% endcomment %}
+				<img src="{% static 'images/1.jpg' %}" alt="Table"></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -180,214 +215,20 @@
         <div class="l-footer__content">
           <article class="l-footer__about">
             <header class="l-footer__logo">
-              <a href="index.html">
+              {% comment %} <a href="index.html">
                 <img class="nav__logo"
-                     src="static/assets/svg/ds-logo-white.825099c5417e.svg"
-                     alt="ООО Южно региональная экспертная группа">
-              </a>
+                     src="logo.svg"
+                     alt="ООО ЮРЭКСП">
+              </a> {% endcomment %}
             </header>
 
-            <div class="l-footer__supporting-text">
-              <div class="rich-text"><p>Инновационная компания ООО "Южно региональная экспертная группа"</p></div>
-            </div>
-            <div class="l-footer__contacts">
-                <a href="тел. 8(918) 451-66-11">+7(918)-451
 
-                6611</a>
-                <a href="cdn-cgi/l/email-protection.html#365f58505976525c5758515945425744451855595b"><span class="__cf_email__" data-cfemail="30595e565f70545a515e575f43445142431e535f5d">[email&#160;protected]</span></a>
-            </div>
-          </article>
-
-
-
-
-<section class="l-footer_column">
-  <a class="l-footer__headline"
-     href="company/index.html">О компании</a>
-
-  <ul class="l-footer__list">
-
-      <li class="l-footer__list-item">
-        <a href="company/team/index.html"
-           class="l-footer__list-link">Комманда</a>
-
-      </li>
-  </ul>
-
-
-
-
-
-  <span class="l-footer__headline">Locations</span>
-
-  <ul class="l-footer__list">
-
-      <li class="l-footer__list-item">
-        <a href="usa/index.html"
-           class="l-footer__list-link">РОССИЯ</a>
-      </li>
-
-
-  </ul>
-
-
-</section>
-
-
-          <section class="l-footer_column">
-  <a class="l-footer__headline"
-     href="services/index.html">Сервис</a>
-
-  <ul class="l-footer__list">
-
-      <li class="l-footer__list-item">
-        <a href="services/web-development/index.html"
-           class="l-footer__list-link">Автомобили</a>
-      </li>
-
-      <li class="l-footer__list-item">
-        <a href="services/mobile-app-development/index.html"
-           class="l-footer__list-link">Машины и оборудование</a>
-      </li>
-
-
-    <span class="footer-divider"></span>
-
-
-  </ul>
-</section>
-
-
-          <section class="l-footer_column">
-  <a class="l-footer__headline"
-     href="industries/index.html">Исследования</a>
-
-  <ul class="l-footer__list">
-
-      <li class="l-footer__list-item">
-        <a href="industries/fintech/index.html"
-           class="l-footer__list-link">Техническое состояние транспортных средств</a>
-      </li>
-
-      <li class="l-footer__list-item">
-        <a href="industries/travel-booking/index.html"
-           class="l-footer__list-link">Определение стоимости восстанвительного ремонта</a>
-      </li>
-
-      <li class="l-footer__list-item">
-        <a href="industries/taxi-transportation/index.html"
-           class="l-footer__list-link">Обучение</a>
-      </li>
-
-
-    <span class="footer-divider"></span>
-
-
-      <li class="l-footer__list-item">
-        <a href="industries/fintech/online-mortgage-software-development/index.html"
-           class="l-footer__list-link">Транспортно-трасологическая экспертиза</a>
-      </li>
-
-
-
-  </ul>
-</section>
-
-
-          <section class="l-footer_column">
-            <a href="blog/index.html"
-               class="l-footer__headline">Блог</a>
-
-            <ul class="l-footer__list">
-
-                <li class="l-footer__list-item">
-                  <a href="blog/category/engineering/index.html"
-                     target="_blank"
-                     class="l-footer__list-link">ИП </a>
-                </li>
-
-            </ul>
-          </section>
-
-        </div>
-      </div>
-
-
-      <ul class="l-footer__list l-footer__social row">
-
-          <li class="l-footer__list-item">
-              <a href="https://clutch.co/profile/django-stars"
-                 class="icon-clutch l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://www.goodfirms.co/companies/view/1862/django-stars"
-                 class="icon-goodfirms l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://medium.com/@djangostars"
-                 class="icon-medium l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://github.com/django-stars/"
-                 class="icon-github l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://www.youtube.com/channel/UCqwJNJUO6ctkQpcAmYZ8qlg"
-                 class="icon-youtube l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://dribbble.com/djangostars"
-                 class="icon-dribbble l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://www.linkedin.com/company/django-stars/"
-                 class="icon-linkedin l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://facebook.com/djangostars/" class="icon-facebook l-footer__social-icon" target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://twitter.com/djangostars/" class="icon-twitter l-footer__social-icon" target="_blank"></a>
-          </li>
-
-          <li class="l-footer__list-item">
-              <a href="https://www.instagram.com/djangostarscom/"
-                 class="icon-instagram l-footer__social-icon"
-                 target="_blank"></a>
-          </li>
-
-      </ul>
-
-      <p class="l-footer__copy">© 2020 ООО "Южно региональная экспертная группа"
+      <p class="l-footer__copy">© 2020. ООО "Южно региональная экспертная группа"
 	  </p>
     </div>
   </footer>
 
 {% comment %} конец Футер {% endcomment %}
-
-
-
-
-
-
-
-
-
 
 <!-- partial -->
 {% comment %} django code {% endcomment %}
