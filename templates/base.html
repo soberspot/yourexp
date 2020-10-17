@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <title>{% block title %}Default title{% endblock title %}</title>
 </head>
+<!-- <header>
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
+  </header> -->
 <body>
     <h1>{% block header %}Хэдер{% endblock header %}</h1>
     <div>{% block content%}Контент{% endblock content %}</div>
