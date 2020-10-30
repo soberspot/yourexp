@@ -1,13 +1,16 @@
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path, include
 from django.urls import re_path
 from lending import views
 
-urlpatterns = [
 
+
+urlpatterns = [
     path('', views.index, name='home'),
     path('admin/', admin.site.urls),
     # re_path(r'^admin', admin.site.urls),
     # path('about/', TemplateView.as_view(template_name="about.html")),
     # path('contact/', TemplateView.as_view(template_name="contact.html")),
 ]
+urlpatterns += staticfiles_urlpatterns()
