@@ -13,4 +13,3 @@ urlpatterns = [
     # path('about/', TemplateView.as_view(template_name="about.html")),
     # path('contact/', TemplateView.as_view(template_name="contact.html")),
 ]
-urlpatterns += staticfiles_urlpatterns()
