@@ -19,7 +19,7 @@ ALLOWED_HOSTS = ['yourexp.ru', '81.177.141.93', 'ovz2.j1030139.me2jm.vps.myjino.
 # Application definition
 
 INSTALLED_APPS = [
-    # 'grappelli',
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
