@@ -1,6 +1,6 @@
 {
     "python.pythonPath": "/home/www/venv/bin/python",
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pydocstyleEnabled": false,
     "python.linting.enabled": true
 }
