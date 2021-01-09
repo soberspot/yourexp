@@ -19,13 +19,14 @@ ALLOWED_HOSTS = ['yourexp.ru', '81.177.141.93', 'ovz2.j1030139.me2jm.vps.myjino.
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'lending'
+    'lending'
 ]
 
 MIDDLEWARE = [
@@ -115,5 +116,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #STATICFILES_DIRS =   os.path.join(BASE_DIR, "static")
-# ]
+#]
 
